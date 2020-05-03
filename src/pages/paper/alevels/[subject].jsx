@@ -61,7 +61,7 @@ var stillNeedDownloadlist = [];
 /* 下载、预览交互函数 */
 function downloadFile(srcUrl) {
   var $a = $("<a/>")
-    .attr("href", "https://www.snapaper.com/download?filename=" + srcUrl)
+    .attr("href", "https://pokers.zeo.im/download?filename=" + srcUrl)
     .attr("download", "");
   $a[0].click();
 }
@@ -443,7 +443,7 @@ class AlevelSubject extends React.Component {
             this.state.isMobile ? (
               <Get
                 url={
-                  "https://www.snapaper.com/vue/papers?cate=A%20Levels&sub=" +
+                  "https://pokers.zeo.im/vue/papers?cate=A%20Levels&sub=" +
                   this.props.router.query.subject +
                   "&node=" +
                   (Cookies.get("snapaper_server")
@@ -516,7 +516,7 @@ class AlevelSubject extends React.Component {
             ) : (
               <Get
                 url={
-                  "https://www.snapaper.com/vue/papers?cate=A%20Levels&sub=" +
+                  "https://pokers.zeo.im/vue/papers?cate=A%20Levels&sub=" +
                   this.props.router.query.subject +
                   "&node=" +
                   (Cookies.get("snapaper_server")

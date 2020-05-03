@@ -151,7 +151,7 @@ export default class igcse extends React.Component {
           <section>
             <Get
               url={
-                "https://www.snapaper.com/vue/cates?cate=IGCSE&node=" +
+                "https://pokers.zeo.im/vue/cates?cate=IGCSE&node=" +
                 (Cookies.get("snapaper_server")
                   ? Cookies.get("snapaper_server")
                   : "1")

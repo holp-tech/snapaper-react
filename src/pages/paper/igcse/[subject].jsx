@@ -61,7 +61,7 @@ var stillNeedDownloadlist = [];
 /* 下载、预览交互函数 */
 function downloadFile(srcUrl) {
   var $a = $("<a/>")
-    .attr("href", "https://www.snapaper.com/download?filename=" + srcUrl)
+    .attr("href", "https://pokers.zeo.im/download?filename=" + srcUrl)
     .attr("download", "");
   $a[0].click();
 }
@@ -451,7 +451,7 @@ class igcseSubject extends React.Component {
               this.state.isMobile ? (
                 <Get
                   url={
-                    "https://www.snapaper.com/vue/papers?cate=IGCSE&sub=" +
+                    "https://pokers.zeo.im/vue/papers?cate=IGCSE&sub=" +
                     this.props.router.query.subject +
                     "&node=" +
                     (Cookies.get("snapaper_server")
@@ -524,7 +524,7 @@ class igcseSubject extends React.Component {
               ) : (
                 <Get
                   url={
-                    "https://www.snapaper.com/vue/papers?cate=IGCSE&sub=" +
+                    "https://pokers.zeo.im/vue/papers?cate=IGCSE&sub=" +
                     this.props.router.query.subject +
                     "&node=" +
                     (Cookies.get("snapaper_server")

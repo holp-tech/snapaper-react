@@ -154,7 +154,7 @@ export default class Alevel extends React.Component {
           <section>
             <Get
               url={
-                "https://www.snapaper.com/vue/cates?cate=A%20Levels&node=" +
+                "https://pokers.zeo.im/vue/cates?cate=A%20Levels&node=" +
                 (Cookies.get("snapaper_server")
                   ? Cookies.get("snapaper_server")
                   : "1")

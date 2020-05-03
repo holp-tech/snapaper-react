@@ -26,7 +26,7 @@ const openNotificationWithIcon = (type, content) => {
 // 文件下载创建函数
 function downloadFile(srcUrl) {
   var $a = $("<a/>")
-    .attr("href", "https://www.snapaper.com/download?filename=" + srcUrl)
+    .attr("href", "https://pokers.zeo.im/download?filename=" + srcUrl)
     .attr("download", "");
   $a[0].click();
 }
@@ -71,7 +71,7 @@ export default class Ebooks extends React.Component {
           <section>
             <Get
               url={
-                "https://www.snapaper.com/case/cases?cate=ebooks&sub=A%20Levels"
+                "https://pokers.zeo.im/case/cases?cate=ebooks&sub=A%20Levels"
               }
               onSuccess={(response) =>
                 this.setState({
